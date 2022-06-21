@@ -70,6 +70,15 @@ for Avril_lottery_even in users["Avril"]["lottery_numbers"]:
   if (Avril_lottery_even % 2 == 0):
     print(Avril_lottery_even)
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+users["Erik"]["lottery_numbers"].append(7)
 # 8. Change Erik's hometown to Edinburgh
+users["Erik"]["home_town"] = "Edinburgh"
 # 9. Add a pet dog to Erik called "fluffy"
+
+new_pet = {"name": "fluffy", "species": "dog"}
+users["Erik"]["pets"][0].update(new_pet)
+
+# users["Erik"]["pets"].insert{"name": "fluffy", "species": "dog"}
+print(users["Erik"]["pets"])
+
 # 10. Add another person to the users dictionary
